@@ -16,7 +16,12 @@
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
+  background-color: var(--clr-secondary);
 }
 
 header {
@@ -33,4 +38,78 @@ a {
 
 a:visited {
   color: inherit;
+}
+
+main {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card {
+  max-width: 23.5rem;
+  background-color: var(--clr-white);
+}
+
+.content {
+  padding: 2rem 1.5rem;
+}
+
+.content h3,
+.content > p,
+.price p:nth-child(2) {
+  color: var(--clr-grayish-blue);
+}
+
+.content h1,
+.price p:first-child {
+  font-family: 'Fraunces', sans-serif;
+}
+.content h3 {
+  font-weight: 400;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 0.8rem;
+}
+
+.content h1 {
+  color: var(--clr-dark-blue);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.content > p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.price {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.price p:first-child {
+  color: var(--clr-primary);
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-style: normal;
+}
+
+a.btn {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  text-align: center;
+  padding: 1.2rem;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+a.btn:hover {
+  background-color: hsl(157, 31%, 24%);
 }
