@@ -64,8 +64,13 @@ main {
 .price p:first-child {
   font-family: 'Fraunces', sans-serif;
 }
-.content h3 {
+
+.content h3,
+.content > p {
   font-weight: 400;
+}
+
+.content h3 {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -83,7 +88,6 @@ main {
 .content > p {
   font-size: 1rem;
   line-height: 1.6;
-  font-weight: 400;
   margin-bottom: 1.2rem;
 }
 
@@ -91,7 +95,7 @@ main {
   display: flex;
   gap: 1.2rem;
   align-items: center;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .price p:first-child {
@@ -108,8 +112,40 @@ a.btn {
   padding: 1.2rem;
   border-radius: 10px;
   transition: 0.3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 a.btn:hover {
   background-color: hsl(157, 31%, 24%);
+}
+
+@media (min-width: 42em) {
+  header {
+    background: url('../images/image-product-desktop.jpg') no-repeat center
+      center/cover;
+    height: 31.25rem;
+  }
+
+  .card {
+    display: flex;
+    max-width: 39rem;
+  }
+
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1.5rem 0;
+  }
+
+  .price {
+    margin-bottom: 2.2rem;
+  }
+
+  .card > * {
+    flex-basis: 100%;
+  }
 }
