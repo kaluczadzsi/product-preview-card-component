@@ -162,3 +162,9 @@ h1 {
     max-width: 600px;
   }
 }
+
+@media (orientation: landscape) {
+  body {
+    height: 500px;
+  }
+}
